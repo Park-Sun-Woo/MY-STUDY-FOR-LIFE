@@ -3,6 +3,10 @@
 <head>
 	<title>Web1 HTML tutorial</title>
 	<meta charset="utf-8">
+	<style>
+		li {color:salmon;}
+		a {text-decoration: none;}
+	</style>
 </head>
 <body>
 	HTML<br>
@@ -12,10 +16,16 @@
 	위의 방식대로 하면 되긴하지만 의미에 맞게 사용해야 좋아하는 것이 코딩이다.
 	<ul>
 		<li>HTML</li>
+		<li style="color:rosybrown;text-decoration: underline">CSS</li>
+		<li>Java Script</li>
+	</ul>
+	<!--
+    <ul>
+		<li>HTML</li>
 		<li>CSS</li>
 		<li>Java Script</li>
 	</ul>	
-
+    -->
 	<h2>나의 HTML 공부</h2>
 	hello web
 	<strong>영상 공부, <u>디자인 공부</u>, 인스타그램 공부</strong>
@@ -40,6 +50,32 @@
 	<p>
 		이번에는 a 태그를 바탕으로 링크를 걸어보자.
 		<a href="https://www.w3.org/TR/html52/" target="_blank" title="이거를 설명하는 것을 적는 것은 title이었다.">이것을 클릭하면 어디로 가게요?</a>
+	</p>
+	<p>
+		영상을 올리도록 하자.
+		<iframe width="100%" src="https://www.youtube.com/embed/7T7r_oSp0SE?list=PLuHgQVnccGMDZP7FJ_ZsUrdCGH68ppvPb" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</p>
+			<div id="disqus_thread"></div>
+		<script>
+			/**
+			*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+			*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+			/*
+			var disqus_config = function () {
+			this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+			this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+			};
+			*/
+			(function() { // DON'T EDIT BELOW THIS LINE
+			var d = document, s = d.createElement('script');
+			s.src = 'https://my-future-study.disqus.com/embed.js';
+			s.setAttribute('data-timestamp', +new Date());
+			(d.head || d.body).appendChild(s);
+			})();
+		</script>
+		<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	<p>
+		
 	</p>
 </body>
 </html>
